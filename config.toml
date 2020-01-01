@@ -1,0 +1,26 @@
+baseURL = "https://www.yuxiaoq.in/"
+title = "yuxiaoq.in"
+author = "Yuxiao QIN"
+theme = "er"
+copyright = "Copyright (c) 2020, YUXIAOQ.IN; all rights reserved."
+paginate = 12
+
+[params]
+# Content types which are included in home page recent posts list.
+showTagCloud = false
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "mailto:hi@yuxiaoq.in"
+weight = 3
