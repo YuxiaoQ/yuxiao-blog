@@ -13,9 +13,9 @@ categories = ["随笔"]
 
 之所以说毫无征兆，是因为 Iceye 从 2018 年成立至今，并没有宣传过他们的 SAR 影像成品可以用来做干涉（InSAR）。对于一直关注 SAR 商业小卫星的人们来说，InSAR 是 SAR 的一个极其重要的应用分支，如果不能做干涉，那么相当于扔掉了 SAR 影像中 50% 的数据信息。所以，SAR 小卫星是否可以做干涉，一直是大家比较关注的。在 5 月之前，Iceye 似乎从来没有提起过他们的卫星有关干涉的能力或计划，而所有的宣传（Public Relations, PR）也都主要放在了变化检测（例如农业用地变化、非法船只监控）和高分辨率（[可以达到惊人的 25cm 的分辨率](https://www.iceye.com/press/press-releases/iceye-unveils-25-cm-sar-imaging-capability-with-current-sar-satellite-constellation)）上面。
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/iceye-change-detection-crops.gif" caption="Iceye 发布的农田随时间变化的 SAR 影像图。来源：[Iceye 官网](https://www.iceye.com/satellite-data#C5.1)" >}}
+{{< figure src="_image/2020-05-10-iceye-interferometry/iceye-change-detection-crops.gif" caption="Iceye 发布的农田随时间变化的 SAR 影像图。来源：[Iceye 官网](https://www.iceye.com/satellite-data#C5.1)" >}}
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/iceye-ship-detection.png" caption="Iceye 官网上所发布的用于做非法船只检测的一个互动界面。来源：[Iceye 官网](https://www.iceye.com/solutions/security/dark-vessel-detection/interactive-demo#)" >}}
+{{< figure src="_image/2020-05-10-iceye-interferometry/iceye-ship-detection.png" caption="Iceye 官网上所发布的用于做非法船只检测的一个互动界面。来源：[Iceye 官网](https://www.iceye.com/solutions/security/dark-vessel-detection/interactive-demo#)" >}}
 
 
 而在 5 月 6 日，[Iceye 却突然在官网上发布了两张干涉图的样片](https://www.iceye.com/press/press-releases/sar-interferometry-demonstrated-with-an-18-day-global-repeat-by-iceye)。两张干涉图都是 18 天的重访周期，一张是在南非开普敦，用的是条带（stripmap） 模式，分辨率应该是 [3 m](https://www.iceye.com/sar-data/stripmap)；另外一张是在澳大利亚西北的 Point Samson，用的是聚焦（spotlight）模式，其分辨率是 [1m 左右 ](https://www.iceye.com/sar-data/spotlight)。发布的这两张图，除了说明 18 天的重访周期以外，并没有透露其它数据细节，也没有提供样例数据供大家下载。
