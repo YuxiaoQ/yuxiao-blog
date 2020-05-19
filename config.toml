@@ -8,6 +8,8 @@ paginate = 12
 [params]
 # Content types which are included in home page recent posts list.
 showTagCloud = false
+showScrollToTop = false
+math = true
 
 # Main menu which appears below site header.
 [[menu.main]]
@@ -24,3 +26,4 @@ weight = 2
 name = "Contact"
 url = "mailto:hi@yuxiaoq.in"
 weight = 3
+
