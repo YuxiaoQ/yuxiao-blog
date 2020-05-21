@@ -13,9 +13,9 @@ categories = ["随笔"]
 
 之所以说毫无征兆，是因为 Iceye 从 2018 年成立至今，并没有宣传过他们的 SAR 影像成品可以用来做干涉（InSAR）。对于一直关注 SAR 商业小卫星的人们来说，InSAR 是 SAR 的一个极其重要的应用分支，如果不能做干涉，那么相当于扔掉了 SAR 影像中 50% 的数据信息。所以，SAR 小卫星是否可以做干涉，一直是大家比较关注的。在 5 月之前，Iceye 似乎从来没有提起过他们的卫星有关干涉的能力或计划，而所有的宣传（Public Relations, PR）也都主要放在了变化检测（例如农业用地变化、非法船只监控）和高分辨率（[可以达到惊人的 25cm 的分辨率](https://www.iceye.com/press/press-releases/iceye-unveils-25-cm-sar-imaging-capability-with-current-sar-satellite-constellation)）上面。
 
-{{< figure src="_image/2020-05-10-iceye-interferometry/iceye-change-detection-crops.gif" caption="Iceye 发布的农田随时间变化的 SAR 影像图。来源：[Iceye 官网](https://www.iceye.com/satellite-data#C5.1)" >}}
+{{< figure src="https://i.loli.net/2020/05/19/9vPmqO4yNJ8Y3Un.gif" caption="Iceye 发布的农田随时间变化的 SAR 影像图。来源：[Iceye 官网](https://www.iceye.com/satellite-data#C5.1)" >}}
 
-{{< figure src="_image/2020-05-10-iceye-interferometry/iceye-ship-detection.png" caption="Iceye 官网上所发布的用于做非法船只检测的一个互动界面。来源：[Iceye 官网](https://www.iceye.com/solutions/security/dark-vessel-detection/interactive-demo#)" >}}
+{{< figure src="https://i.loli.net/2020/05/19/wjx96DnAfYQpk74.png" caption="Iceye 官网上所发布的用于做非法船只检测的一个互动界面。来源：[Iceye 官网](https://www.iceye.com/solutions/security/dark-vessel-detection/interactive-demo#)" >}}
 
 
 而在 5 月 6 日，[Iceye 却突然在官网上发布了两张干涉图的样片](https://www.iceye.com/press/press-releases/sar-interferometry-demonstrated-with-an-18-day-global-repeat-by-iceye)。两张干涉图都是 18 天的重访周期，一张是在南非开普敦，用的是条带（stripmap） 模式，分辨率应该是 [3 m](https://www.iceye.com/sar-data/stripmap)；另外一张是在澳大利亚西北的 Point Samson，用的是聚焦（spotlight）模式，其分辨率是 [1m 左右 ](https://www.iceye.com/sar-data/spotlight)。发布的这两张图，除了说明 18 天的重访周期以外，并没有透露其它数据细节，也没有提供样例数据供大家下载。
@@ -25,16 +25,16 @@ categories = ["随笔"]
 
 不管怎样，对于 InSAR 研究者/从业者而言，这都是一个值得振奋的里程碑事件。正如其在官网所说，Iceye 首次实现了 100 千克以下小卫星的干涉能力。在这之前，InSAR 都是被一些更大的卫星和国家级别的研究机构所「垄断」的，例如德宇航局（DLR）和空客（ Airbus） 合资的 TerrSAR-X （1230 千克），欧空局（ESA）的哨兵一号（2200 千克！）等。以 80 千克的重量实现干涉，说明 Iceye 的相关技术已经非常先进了。
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/iceye-insar-south-africa-kape-town.png" caption="Iceye 所发布的干涉图，地点位于南非开普敦，数据为18天重访周期的条带模式（Stripmap）。来源：[Iceye 官网](https://www.iceye.com/press/press-releases/sar-interferometry-demonstrated-with-an-18-day-global-repeat-by-iceye)" >}}
+{{< figure src="https://i.loli.net/2020/05/19/F56D7xVNBHO8ljW.png" caption="Iceye 所发布的干涉图，地点位于南非开普敦，数据为18天重访周期的条带模式（Stripmap）。来源：[Iceye 官网](https://www.iceye.com/press/press-releases/sar-interferometry-demonstrated-with-an-18-day-global-repeat-by-iceye)" >}}
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/iceye-insar-australia-point-samson.png" caption="Iceye 所发布的干涉图，地点位于澳大利亚的 Point Samson，数据为18天重访周期的聚焦模式（Spotlight）。来源：[Iceye 官网](https://www.iceye.com/press/press-releases/sar-interferometry-demonstrated-with-an-18-day-global-repeat-by-iceye)" >}}
+{{< figure src="https://i.loli.net/2020/05/19/c7FBrThSjWeXKIZ.png" caption="Iceye 所发布的干涉图，地点位于澳大利亚的 Point Samson，数据为18天重访周期的聚焦模式（Spotlight）。来源：[Iceye 官网](https://www.iceye.com/press/press-releases/sar-interferometry-demonstrated-with-an-18-day-global-repeat-by-iceye)" >}}
 
 
 ### 干涉图的价值：从千里之外看毫厘之差
 要解释为什么这是一个里程碑事件，就要简略地说说合成孔径雷达干涉（InSAR）。
 
 在大部分人眼里，合成孔径雷达/雷达影像是这样的：
-{{< figure src="/_image/2020-05-10-iceye-interferometry/sar-pentagon.jpg" caption="SAR 影像：五角大楼。来源：https://fas.org/irp/imint/tesar2.htm" >}}
+{{< figure src="https://blog.yuxiaoq.in/image/sar-pentagon.jpg" caption="SAR 影像：五角大楼。来源：https://fas.org/irp/imint/tesar2.htm" >}}
 
 雷达影像通常都是黑白图片，其中黑白代表了接收到的雷达信号的能量，越白代表接收到的反射雷达信号更强；越黑则是越弱。
 
@@ -50,7 +50,7 @@ $$
 $$
 其中 $A(i,j)$ 是 SAR 的强度图，就是我们刚刚看到的五角大楼的影像；而 $\phi$ 就是相位信息，记录着传感器到目标像素的距离的余。InSAR 利用的就是 $\phi$ 部分的信息。
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/insar-principle.png" caption="合成孔径雷达的相位就像一个只有分钟指针的钟。来源：Q. Verburg, in QUInSAR: Temporal Parameter and Ambiguity Estimation Using Recursive Least-Squares: A Methodology for Persistent Scatterer Interferometry, Master thesis, Delft University of Technology, 2017. " >}}
+{{< figure src="https://i.loli.net/2020/05/19/ETuCjfo7Ykm2r59.png" caption="合成孔径雷达的相位就像一个只有分钟指针的钟。来源：Q. Verburg, in QUInSAR: Temporal Parameter and Ambiguity Estimation Using Recursive Least-Squares: A Methodology for Persistent Scatterer Interferometry, Master thesis, Delft University of Technology, 2017. " >}}
 
 ### Iceye 干涉影像的质量到底如何？
 
@@ -66,7 +66,7 @@ $$
 
 尽管似乎无法从 png 上得到太多的有用信息，还是有一点引起了我的注意，那就是开普敦那一张图上代表高程的条纹（fringe）。熟悉 InSAR 的人都知道，在有山地起伏的地方，如果忽略大气和地表沉降信号，那么干涉图上的条纹代表的是高程的变化，我们可以用条纹来反衍地表高程信息。而条纹的「密集程度」是与卫星基线（也就是两次卫星经过同一区域上空时的相对位置）相关的。从 Iceye 发布的干涉图，我们就可以反衍他们的卫星基线。
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/height-ambiguity.png" caption="在 Google Earth 上数条纹数量并读取高程值来确定高程模糊度（height ambiguity）" >}}
+{{< figure src="https://i.loli.net/2020/05/19/T9qKVHniIhZXUFY.png" caption="在 Google Earth 上数条纹数量并读取高程值来确定高程模糊度（height ambiguity）" >}}
 
 为了知道一个条纹（干涉图里一轮从红到蓝，代表相位变化$2\pi$）所代表的高程，我在地图上选取了三个「小山坡」，读取了 Google Earth 上的高程值（根据我的经验，基本准确）。如下图所示，通过对几个小山坡的估计，我大概确定了一个条纹大约是高程变化 **10 米**。根据著名的公式[^height-ambiguity]：
 $$
@@ -85,7 +85,7 @@ $$
 
 不过，Iceye 如果想要卖高程数据的话，可能优势并不是很多。一个是德宇航局（DLR）的 Tandem-X 计划的高程产品已经有了，质量应该只会比 Iceye 的卫星更好；另外能做高程的传感器很多，LiDAR，photogrammetry 都可以做，高程反衍本来也并不是 InSAR 的优势所在。
 
-{{< figure src="/_image/2020-05-10-iceye-interferometry/tsx-csk-s1-baseline.png" caption="三颗主要 SAR 卫星：德国的 TerraSAR-X、意大利的 COSMO-SkyMed 和 欧空局的 哨兵一号的基线数据对比。左边三张图即为三种卫星可以做干涉的影像基线直方图。可以看到 TerraSAR-X 基本可以控制在 200 米以内，COSMO 略差一些，500 米以上的也很多，哨兵是最好的，几乎不会超过 100 米。" >}}
+{{< figure src="https://i.loli.net/2020/05/19/dtl8rzT2jFYN4xX.png" caption="三颗主要 SAR 卫星：德国的 TerraSAR-X、意大利的 COSMO-SkyMed 和 欧空局的 哨兵一号的基线数据对比。左边三张图即为三种卫星可以做干涉的影像基线直方图。可以看到 TerraSAR-X 基本可以控制在 200 米以内，COSMO 略差一些，500 米以上的也很多，哨兵是最好的，几乎不会超过 100 米。" >}}
 
 
 ### 如果 InSAR 这么好/重要，为什么现在 Iceye 才发布？
