@@ -4,13 +4,13 @@ author = "Yuxiao QIN"
 theme = "er"
 copyright = "Copyright (c) 2020, YUXIAOQ.IN; all rights reserved."
 paginate = 12
+googleAnalytics = "UA-48512230-2"
 
 [params]
 # Content types which are included in home page recent posts list.
 showTagCloud = false
 showScrollToTop = false
 math = true
-googleAnalytics = "UA-48512230-2"
 
 # Main menu which appears below site header.
 [[menu.main]]
