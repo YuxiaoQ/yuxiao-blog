@@ -10,6 +10,7 @@ paginate = 12
 showTagCloud = false
 showScrollToTop = false
 math = true
+googleAnalytics = "UA-48512230-2"
 
 # Main menu which appears below site header.
 [[menu.main]]
