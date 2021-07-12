@@ -22,15 +22,11 @@ categories = ["随笔"]
 
 ## 诞生
 
-在经历了近一年的准备、将近 30 个版本的迭代和若干个不眠夜（是的，不要以为荷兰就不加班）的攻关之后，荷兰全国 InSAR 沉降图在2020年9月上线[^1]（服务器在欧洲，如果访问时卡顿请自行优化线路）。此项目最终处理了荷兰境内的 6 轨 Sentinel-1 数据，监测时间跨度近 6 年，覆盖面积达 41526km^2^，最终给出了近 2 亿个测量点数据，平均点密度达到每平方公里 4765 个。与荷兰境内 131 个 GNSS 数据比对验证，64.1% 达到每年 0.5 毫米以内精度，87.8% 达到每年 1 毫米以内精度，96.2% 达到每年 1.5 毫米以内精度。同时，如果你想要基于这个项目的 2 亿个数据做一些后期处理分析的话，你甚至可以申请下载[^2] csv 格式的全部原始数据，大约 350GB。这样的测量点密度和测量精度，已经毫无疑问地达到了世界顶尖的水平。
+在经历了近一年的准备、将近 30 个版本的迭代和若干个不眠夜（是的，不要以为荷兰就不加班）的攻关之后，荷兰全国 InSAR 沉降图 bodemdalingskaart（荷兰语，直译为 subsidence map）在2020年9月上线[^1]（服务器在欧洲，如果访问时卡顿请自行优化线路）。此项目最终处理了荷兰境内的 6 轨 Sentinel-1 数据，监测时间跨度近 6 年，覆盖面积达 41526km^2^，最终给出了近 2 亿个测量点数据，平均点密度达到每平方公里 4765 个。与荷兰境内 131 个 GNSS 数据比对验证，64.1% 达到每年 0.5 毫米以内精度，87.8% 达到每年 1 毫米以内精度，96.2% 达到每年 1.5 毫米以内精度。同时，如果你想要基于这个项目的 2 亿个数据做一些后期处理分析的话，你甚至可以申请下载[^2] csv 格式的全部原始数据，大约 350GB。这样的测量点密度和测量精度，已经毫无疑问地达到了世界顶尖的水平。
 
-![ezgif-5-36d31baa83e1](%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%EF%BC%81%EF%BC%81%EF%BC%81.assets/ezgif-5-36d31baa83e1.gif)
+{{< figure src="https://blog.yuxiaoq.in/image/bodemdalingskaart-example-1.gif" caption="bodemdalingskaart 就长这个样子。" >}}
 
-bodemdalingskaart 就长这个样子。
-
-![ezgif-1-a34ba6cd21e3](%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%EF%BC%81%EF%BC%81%EF%BC%81.assets/ezgif-1-a34ba6cd21e3.gif)
-
-bodemdalingskaart 的 demo：阿姆斯特丹史基浦机场一段发生了突然沉降的跑道。不过各位小伙伴们不用担心，史基浦机场管理处已经知道这个情况并且跟进了。
+{{< figure src="https://blog.yuxiaoq.in/image/bodemdalingskaart-example-2.gif" caption="bodemdalingskaart 的 demo：阿姆斯特丹史基浦机场一段发生了突然沉降的跑道。不过各位小伙伴们不用担心，史基浦机场管理处已经知道这个情况并且跟进了。" >}}
 
 ## 曲折
 
@@ -60,13 +56,9 @@ Ramon 想到的第一个主意是：打官司。
 
 因此，公司决定在提交给荷兰水务局原始数据的同时，自己发布一张「荷兰全国土地沉降图项目 2.0」。首先，「可视化」是一种比较好地展示方式。其次，发布这样一个属于自己的平台，就可以将解释权掌握在自己手里。
 
-![Screen Shot 2021-07-09 at 21.09.54](%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%EF%BC%81%EF%BC%81%EF%BC%81.assets/Screen%20Shot%202021-07-09%20at%2021.09.54.png)
+{{< figure src="https://blog.yuxiaoq.in/image/bodemdalingskaart-screenshot.jpg" caption="打开 bodemdalingskaart 后首先会跳出来一个充满了字的特别丑的「免责声明」。左边栏还有一大堆长长的解释。" >}}
 
-打开 bodemdalingskaart 后首先会跳出来一个充满了字的特别丑的「免责声明」。左边栏还有一大堆长长的解释。
-
-
-
-大家第一次登陆 bodemdalingskaart（荷兰语，直译为 subsidence map）的时候，可能会觉得「哇，丑爆了。为什么会有这么多字？」 
+大家第一次登陆 bodemdalingskaart 的时候，可能会觉得「哇，丑爆了。为什么会有这么多字？」 
 
 >   The data provided is the result of numerical data processing, complex algorithms and models, based on the available source data, current scientific insights, statistical analyses, and simplifications. This data is not optimized and therefore not suitable for specific applications. 
 >
@@ -78,9 +70,7 @@ Ramon 想到的第一个主意是：打官司。
 
 我们的葛大庆老师这两年也一直在或多或少强调同样的事情，即 「InSAR 不是万能的，我们更不能宣传它是万能的。我们还有很长的路要走。我们还需要更多的训练、更多的经验。」
 
-![葛大庆](%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%EF%BC%81%EF%BC%81%EF%BC%81.assets/%E8%91%9B%E5%A4%A7%E5%BA%86.png)
-
-葛大庆老师在朋友圈里面关于 InSAR 行业的深刻思考。 
+{{< figure src="https://blog.yuxiaoq.in/image/daqing-ge-insar.jpg" caption="葛大庆老师在朋友圈里面关于 InSAR 行业的深刻思考。">}}
 
 好了，这就是我想讲的「一张全国沉降图的诞生」的故事。
 
@@ -88,16 +78,9 @@ Ramon 想到的第一个主意是：打官司。
 
 Ramon 是一个对地学和 InSAR 充满了热情、倾注了无数心血的学者，甚至还有一些浪漫主义。举个例子，代尔夫特理工大学有一道横穿校园的北纬 52 度线，涂成蓝色，还在地上同时标出了成千上万年来北纬52度线在历史上的不同位置。这就是他的一个艺术作品。他还提到过他在做的另一个项目，通过和几位荷兰知名的艺术家合作，要在荷兰各个沉降严重的主要城市设计艺术地标，揭示不同地方在过去若干年的沉降程度，以唤起公众对于荷兰地表沉降严重性的认识。我在离开荷兰的时候曾经问过他，「InSAR 的发展方向在哪里？」他说「InSAR 的从业者应该时刻牢记， InSAR 是为其他行业提供服务和信息的，因此不要因为自己掌握了一点点信号处理和遥感的知识就固步自封，测量出来地表移动了两毫米并不是我们的最终目标。我们最应该做的就是突破自己的舒适圈，去深入学习其他行业的知识，例如地球物理、土木、工程、油气等，与 InSAR 测量在机理上结合起来，并把 InSAR 的测量结果通过研究机理、建模和解译，转化成其他行业所需的关键信息，这样，才能够发挥 InSAR 的作用。」
 
-![blauwelijnoverzicht_21augustus2018_ConnievanUffelen](%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%EF%BC%81%EF%BC%81%EF%BC%81.assets/blauwelijnoverzicht_21augustus2018_ConnievanUffelen.jpg)
+{{< figure src="https://blog.yuxiaoq.in/image/tud-north-52-latitude.jpg" caption="横穿代尔夫特理工校园的北纬 52 度线。">}}
 
-横穿代尔夫特理工校园的北纬 52 度线。
-
-
-
-![Screen Shot 2021-07-12 at 01.22.21](%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%E5%8D%9A%E6%96%87%EF%BC%81%EF%BC%81%EF%BC%81.assets/Screen%20Shot%202021-07-12%20at%2001.22.21.png)
-
-北纬 52 度线在不同历史时期所处的位置。
-
+{{< figure src="https://blog.yuxiaoq.in/image/tud-north-52-latitude-change.jpg" caption="北纬 52 度线在不同历史时期所处的位置。">}}
 
 [^1]: https://bodemdalingskaart.portal.skygeo.com/portal/bodemdalingskaart/u2/viewers/basic/
 [^2]: https://bodemdalingskaart.nl/en-us/download-kaartlagen/
